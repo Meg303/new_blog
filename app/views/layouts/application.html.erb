@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NewBlog</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+    <style>
+        body {
+            text-align: center;
+            background: white;
+            color: white;
+            font-family: Helvetica;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+             }
+        p  {
+            font-size: 34;
+        }
+        input {
+            border: 0;
+            padding: 12px;
+            font-size: 18px;
+        }
+        input[type="submit"]{
+            background: purple;
+            color: white;
+        }
+        li
+        {
+        font-family: garamond;
+        font-size: 24px;
+        display: inline;
+        width: 60px;
+        text-decoration: none;
+        list-style: none;
+        width:100px;
+        margin:20px;
+        padding:5px 0;
+        }
+        li a:hover{
+            text-decoration: none;
+        }
+
+    </style>
+
+
+</head>
+<body>
+      <div id="content"> 
+      <h1>
+    <a href="http://stackoverflow.com">
+    <img src="https://scontent-b-atl.xx.fbcdn.net/hphotos-prn2/t1/1947847_222438254628341_1057064395_n.jpg"/>
+    </a>
+    </h1>
+    <ul>
+        <li><a href="#home">Catalog</a></li>
+        <li><a href="https://docs.google.com/forms/d/134wLdo-YvKTaeHgGgCd6Ob30nyjit6z0IURscOTZv9w/viewform">Custom</a></li>
+        <li><a href="http://zuitco.tumblr.com/">Blog</a></li>
+        <li><a href="/launch">Launch</a></li>
+        <li><a href="/biography">About Us</a></li>
+    </ul>
+      </div>
+<%= yield %>
+
+
+</body>
+</html>

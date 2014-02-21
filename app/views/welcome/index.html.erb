@@ -1,0 +1,49 @@
+<style>
+p
+ {
+color: black;
+ } 
+
+button {
+	color: purple;
+}
+ 
+button[type="submit"]{
+            background: purple;
+            color: white;
+        }
+
+button {
+	color: purple;
+}
+ 
+  input {
+            border: 0;
+            padding: 12px;
+            font-size: 18px;
+        }
+ 
+</style>
+   
+
+    <img src="http://farm8.staticflickr.com/7440/12207850203_566c286336_b.jpg">
+    <p>Sign up to be a beta tester!<br> Super 140s wool, bemberg lining and personalized monogramming</p>
+   
+<% if @first_name %>
+
+   <%= @first_name %>
+   <%= @last_name %>
+
+<% else %> 
+
+    <form method= "post" action="">
+    <input type="email" name="firstname"
+    placeholder="Your email"/>       
+    <button type="submit">Submit</button>
+           
+     <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+<form/>
+
+
+<% end %>
+

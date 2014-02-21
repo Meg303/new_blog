@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Zuit Sitemap</h1>
+<ul>
+  <%
+      @my_new.each do |name, url|
+        #@my_links.each do |url|	
+    %>
+  <li><%= link_to(name, url) %></li>
+</ul>
+     <%
+       end
+     %>
+     <%
+     #  end
+     %>
+</body>
+</html>
